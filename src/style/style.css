@@ -1,0 +1,19 @@
+@import "./rootStyle.css";
+@import "./nav.css";
+@import "./container.css";
+@import "./card.css";
+@import "./stats.css";
+@import "./footer.css";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    outline-offset: none;
+}
+
+html {
+    font-size: 16px;
+    font-family: Helvetica, sans-serif;
+}

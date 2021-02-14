@@ -1,0 +1,24 @@
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.footer {
+    width: 100%;
+    height: 15vh;
+    background: var(--lightBlueGrey);
+    padding: 1rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    place-items: center;
+    gap: 3rem;
+}
+.footer--notActive {
+    display: none;
+}
+.navBrand {
+    width: 100px;
+}
+.ghLink {
+    color: var(--darkGrey);
+}

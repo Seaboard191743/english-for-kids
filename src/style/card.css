@@ -1,0 +1,99 @@
+
+.contentField {
+    padding: 30px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 280px);
+    justify-content: center;
+    gap: 3rem;
+}
+
+.card {
+    position: relative;
+    height: 320px;
+    background: var(--mainWhite);
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 0 8px rgba(39, 35, 51, .2);
+    cursor: pointer;
+    transition: all .5s;
+}
+.card--active, .imagePlace--active, .descPar--active {
+    transform: rotateY(180deg);
+}
+.card--opacity {
+    opacity: .5;
+}
+.card:hover {
+    box-shadow: 0 0 20px rgba(39, 35, 51, .3);
+}
+
+.imagePlace {
+    width: 100%;
+    height: 230px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: height .3s;
+}
+.imagePlace--fullHeight {
+    height: 100%;
+}
+
+.cardDesc {
+    width: 100%;
+    height: 90px;
+    display: grid;
+    place-items: center;
+}
+.cardDesc--active {
+    display: none;
+}
+.descPar {
+    font-size: 1.2rem;
+    color: var(--mainBlueGrey);
+    font-weight: 700;
+}
+
+.turnAroundBtn {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    padding: 8px;
+    background: var(--mainCoral);
+    color: var(--mainWhite);
+    border: none;
+    cursor: pointer;
+}
+.turnAroundBtn:hover, .turnAroundBtn:focus {
+    background: var(--deepCoral);
+    box-shadow: inset 0 0 5px rgba(183, 28, 28, 1);
+}
+
+.countStat {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: var(--darkBlueMint);
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+.countStat--active {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.countCorrect, .countError, .countSeparator {
+    padding: 5px;
+    font-size: 3rem;
+    font-weight: 700;
+    width: max-content;
+}
+.countCorrect, .countSeparator {
+    color: var(--mainWhite);
+}
+.countError {
+    color: var(--deepCoral);
+}

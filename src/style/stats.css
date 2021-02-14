@@ -1,0 +1,111 @@
+h3, h4 {
+    font-size: clamp(1.1rem, 1.3rem, 2vw);
+}
+.statsContainer {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    padding: 1rem;
+    background: var(--mainBlueGrey);
+    z-index: 110;
+    display: none;
+}
+.statsContainer--active {
+    display: block;
+}
+.statsHeading {
+    font-size: clamp(1.7rem, 2.5rem, 3vw);
+    color: var(--mainWhite);
+    text-align: center;
+    padding: 2rem;
+}
+.innerStatsContainer {
+    width: min(1300px, 100%);
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 170px 1fr;
+}
+.stats {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(125px, 1fr));
+    gap: 3rem 1rem;
+}
+.innerStatsContainer > * {
+    color: var(--mainWhite);
+}
+
+.category {
+    width: 100px;
+    cursor: pointer;
+    margin-bottom: 15px;
+    padding: 10px 5px;
+}
+.category:hover {
+    opacity: .5;
+}
+.category--active {
+    background: var(--darkGrey);
+}
+
+.categoryWords, .successCat, .failCat,
+.categoryTranslate, .prcntCat {
+    margin: 0 0 35px 0;
+    display: none;
+}
+
+.categoryWords--active, .successCat--active, 
+.failCat--active, .categoryTranslate--active, .prcntCat--active {
+    display: block;
+}
+.wordsDivHeading, .categoryDivHeading, 
+.successfulHeading, .failureHeading, 
+.wordsDivTrHeading, .prcntHeading {
+    margin: 0 0 20px 0;
+}
+.words, .successBlock, .failBlock, .wordsTranslate, .prcntBlock {
+    margin: 0 0 15px 0;
+    padding: 10px 0;
+}
+.closeLink, .clearStats {
+    font-size: 1rem;
+    color: var(--mainWhite);
+    text-decoration: underline;
+    text-transform: uppercase;
+    position: absolute;
+    top: 15px;
+    right: 1.5rem;
+    padding: 4px;
+    cursor: pointer;
+    transition: opacity .3s;
+}
+.clearStats {
+    left: 1.5rem;
+}
+.closeLink:hover, .clearStats:hover {
+    opacity: .7;
+}
+
+
+
+
+@media (max-width: 690px) {
+    .statsContainer {
+        overflow-y: scroll;
+    }
+    .innerStatsContainer {
+        grid-template-columns: 1fr;
+    }
+    .categoryDivHeading {
+        display: none;
+    }
+    .categoryDiv {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+        margin-bottom: 2rem;
+    }
+    .stats {
+        gap: 0;
+    }
+}

@@ -1,0 +1,16 @@
+
+:root {
+    --mainWhite: rgba(255, 255, 255, 1);
+    --mainCoral: rgba(244, 67, 54, 1);
+    --deepCoral: rgba(229, 57, 53, 1);
+    --mainAzzuri: rgba(0, 184, 212, 1);
+    --mainBlueGrey: rgba(39, 35, 51, 1);
+    --lightBlueGrey:rgba(207, 216, 220, 1);
+    --lightGrey: rgba(238, 238, 238, 1);
+    --mainBrown: rgba(93, 64, 55, 1);
+    --darkGrey: rgba(97, 97, 97, 1);
+    --middleBlue: rgba(2, 136, 209, 1);
+    --darkBlue: rgba(1, 87, 155, 1);
+    --mainBlueMint: rgba(3, 175, 194, 1); 
+    --darkBlueMint:  rgba(4, 152, 168, 1);
+}
