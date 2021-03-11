@@ -1,24 +1,23 @@
 img {
-    max-width: 100%;
-    height: auto;
+  max-width: 100%;
+  height: auto;
 }
 
 .footer {
-    width: 100%;
-    height: 15vh;
-    background: var(--lightBlueGrey);
-    padding: 1rem;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    place-items: center;
-    gap: 3rem;
+  width: 100%;
+  background: var(--lightBlueGrey);
+  padding: 1rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  place-items: center;
+  gap: 0.5rem;
 }
 .footer--notActive {
-    display: none;
+  display: none;
 }
 .navBrand {
-    width: 100px;
+  width: 100px;
 }
 .ghLink {
-    color: var(--darkGrey);
+  color: var(--darkGrey);
 }
